@@ -1,4 +1,5 @@
-#    Created by Gleb Otochkin 2021-01-24  
+#    Created by Gleb Otochkin 2021-07-29  #
+
 # Provider and authentication details
 provider "oci" {
   tenancy_ocid     = var.tenancy_ocid
@@ -19,11 +20,11 @@ data "oci_identity_availability_domain" "ad" {
 }
 
 # Modules declaration 
-
+/*
 module "security_lists" {
   source = "../modules/security_lists"
   vcn_id = oci_core_vcn.moduletest_vcn.id
   compartment_ocid = var.compartment_ocid
   security_list_id = oci_core_vcn.moduletest_vcn.default_security_list_id
 }
-
+*/
