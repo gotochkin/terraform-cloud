@@ -25,7 +25,6 @@ resource "oci_core_instance" "moduletest_instance" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
-    /*user_data = base64encode(file("./data/moduletest_instance.cloud-config.yml")) */
   }
 
   timeouts {
