@@ -20,7 +20,7 @@ resource "oci_core_instance" "moduletest_instance" {
 
     source_details {
     source_type = "image"
-    source_id   = var.database_image_ocid[var.region]
+    source_id   = var.image_id[var.region]
   }
 
   metadata = {
