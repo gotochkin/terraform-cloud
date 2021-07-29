@@ -1,0 +1,5 @@
+terraform-website/env-vars
+terraform-website/terraform*
+terraform-website/.*
+terraform-website/*log
+.DS_Store
