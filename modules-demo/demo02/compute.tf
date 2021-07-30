@@ -17,7 +17,7 @@ resource "oci_core_instance" "moduletest02_instance" {
     assign_public_ip = true
     hostname_label   = "moduletest02"
     nsg_ids = [
-      oci_core_network_security_group.tnsnet_network_security_group.id
+      tnsnet_network_security_group_id
     ]
   }
 
