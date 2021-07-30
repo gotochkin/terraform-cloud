@@ -1,7 +1,7 @@
 #    Created by Gleb Otochkin 2021-07-29  #
 
 # Define compute box
-resource "oci_core_instance" "moduletest_instance02" {
+resource "oci_core_instance" "moduletest02_instance" {
   availability_domain = data.oci_identity_availability_domain.ad.name
   compartment_id      = var.compartment_ocid
   display_name        = "moduletest02"
